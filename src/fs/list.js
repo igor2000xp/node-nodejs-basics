@@ -10,8 +10,8 @@ const ERROR_FS = 'FS operation failed';
 export const list = async (path) => {
     // Write your code here
   try {
-    const a = await fs.readdir(path);
-    console.log(a);
+    const filesArr = await fs.readdir(path);
+    console.log(filesArr);
 
   } catch (err) {
     throw new Error(ERROR_FS);
