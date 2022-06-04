@@ -1,6 +1,6 @@
 import * as fs from 'fs/promises';
-import {fileURLToPath} from "url";
-import path from "path";
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 const fileName = 'fileToRemove.txt';
 const filePath = 'files';

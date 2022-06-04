@@ -1,5 +1,5 @@
 import * as fs from 'fs/promises';
-import {fileURLToPath} from 'url';
+import { fileURLToPath } from 'url';
 import * as path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
