@@ -11,8 +11,8 @@ export const transform = async () => {
     }
 
     _transform(chunk, encoding, callback) {
-      const stringifyReversedChunk = chunk.toString().split('').reverse().join('');
-      this.push(`${stringifyReversedChunk}\n`);
+      const stringifyReversedChunk = chunk.toString().split('').reverse().join('').trim();
+      this.push(`${stringifyReversedChunk}\n\n`);
       callback();
     }
   }
