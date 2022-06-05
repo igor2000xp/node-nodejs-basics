@@ -12,8 +12,8 @@ const JSON_A = path.resolve( __dirname, './files/a.json');
 const JSON_B = path.resolve( __dirname, './files/b.json');
 
 const require = module.createRequire(import.meta.url);
-const dataA = require("./files/a.json");
-const dataB = require("./files/b.json");
+const dataA = require(JSON_A);
+const dataB = require(JSON_B);
 
 const random = Math.random();
 
